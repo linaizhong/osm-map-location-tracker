@@ -34,14 +34,14 @@ A professional web-based map application built with Vue.js, Vuex, OpenLayers, an
    cd Your_Git_Path/osm-map-location-tracker
    ```
 
-2. **Alternatively, if you are using the NodeJS server, you can install backend dependencies, build and run the server**
+2. **If you are using the NodeJS server, you can install backend dependencies, build and run the server**
    ```bash
    cd nodejs-backend
    npm install express sqlite3 cors body-parser
    node server.js   
    ```
 
-3. **If you are using the Java server, you can install backend dependencies, build and run the server**
+3. **Alternatively, if you are using the Java server, you can install backend dependencies, build and run the server**
    ```bash
    cd backend 
    mvn clean install

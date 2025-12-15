@@ -57,7 +57,8 @@ export default createStore({
       commit('SET_LOADING', true);
       try {
         const data = await api.getLocations();
-        commit('SET_LOCATIONS', data.locations);
+        const locations = data.locations || data;  // Use data.locations if it exists, otherwise use data
+        commit('SET_LOCATIONS', locations);
       } catch (error) {
         console.error(error);
         this.dispatch('showNotification', {
@@ -132,7 +133,8 @@ export default createStore({
       commit('SET_LOADING', true);
       try {
         const data = await api.searchLocations(state.searchKeyword);
-        commit('SET_LOCATIONS', data.locations);
+        const locations = data.locations || data;  // Use data.locations if it exists, otherwise use data
+        commit('SET_LOCATIONS', locations);
       } catch (error) {
         console.error(error);
         this.dispatch('showNotification', {

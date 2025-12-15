@@ -37,7 +37,7 @@ A professional web-based map application built with Vue.js, Vuex, OpenLayers, an
 2. **If you are using the NodeJS server, you can install backend dependencies, build and run the server**
    ```bash
    cd nodejs-backend
-   npm install express sqlite3 cors body-parser
+   npm install
    node server.js   
    ```
 

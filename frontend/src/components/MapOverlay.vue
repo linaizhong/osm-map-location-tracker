@@ -8,7 +8,7 @@
           id="location-name"
           type="text"
           v-model="locationName"
-          placeholder="Enter location name"
+          v-bind:placeholder="selectedName || 'Enter location name'"
           class="name-input"
           @input="updateName"
           maxlength="100"
@@ -48,6 +48,7 @@ export default {
     const store = useStore();
     const locationName = ref('');
 
+    const selectedName = computed(() => store.getters.selectedName);
     const selectedCoords = computed(() => store.getters.selectedCoords);
     const selectedAddress = computed(() => store.getters.selectedAddress);
     const saving = computed(() => store.getters.saving);
@@ -92,6 +93,7 @@ export default {
     });
 
     return {
+      selectedName,
       selectedCoords,
       selectedAddress,
       saving,

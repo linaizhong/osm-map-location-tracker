@@ -77,6 +77,7 @@ export default {
 
         store.dispatch('setSelectedCoords', coords);
         store.dispatch('setSelectedAddress', null);
+        store.dispatch('setSelectedName', '');
 
         // Add marker
         vectorSource.value.clear();
@@ -114,6 +115,7 @@ export default {
           vectorSource.value.addFeature(marker);
 
           // Update selected location in store
+          store.dispatch('setSelectedName', location.name);
           store.dispatch('setSelectedCoords', [location.longitude, location.latitude]);
           store.dispatch('setSelectedAddress', location.address);
         }

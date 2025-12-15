@@ -15,7 +15,7 @@ A professional web-based map application built with Vue.js, Vuex, OpenLayers, an
 ## Tech Stack
 
 - **Frontend**: Vue.js 3, Vuex 4, OpenLayers 8, Vite
-- **Backend**: Java SDK 17, Spring Boot 3.2.0, RESTful API
+- **Backend**: NodeJS or Java SDK 17 (and Spring Boot 3.2.0 and RESTful API)
 - **Database**: SQLite3
 - **Map Data**: OpenStreetMap
 

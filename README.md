@@ -36,26 +36,33 @@ A professional web-based map application built with Vue.js, Vuex, OpenLayers, an
 
 2. **If you are using the NodeJS server, you can install backend dependencies, build and run the server**
    ```bash
-   cd nodejs-backend
+   cd backend-nodejs
    npm install
    node server.js   
    ```
 
 3. **Alternatively, if you are using the Java server, you can install backend dependencies, build and run the server**
    ```bash
-   cd backend 
+   cd backend-java 
    mvn clean install
    java -jar .\target\map-location-tracker-1.0.0.jar   
    ```
 
-4. **In a new terminal, install frontend dependencies and run it**
+4. **In a new terminal, if you are using typescript + Vue, install frontend dependencies and run it**
    ```bash
-   cd frontend 
+   cd frontend-ts 
    npm install
    npm run dev
    ```
 
-5. **Access the application**
+5. **In a new terminal, if you are using javascript + Vue, install frontend dependencies and run it**
+   ```bash
+   cd frontend-js 
+   npm install
+   npm run dev
+   ```
+
+6. **Access the application**
    - The frontend will open automatically (usually `http://localhost:5173`)
    - Backend API runs on `http://localhost:3000`
 
